@@ -1,7 +1,7 @@
 {
   "name": "@david.uhlir/context-log",
   "version": "1.0.0",
-  "description": "Package desceription",
+  "description": "Context namespace base log for async closure",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
