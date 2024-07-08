@@ -17,7 +17,13 @@
     "type": "git",
     "url": "git+https://github.com/daviduhlir/context-log.git"
   },
-  "keywords": [],
+  "keywords": [
+    "log",
+    "context",
+    "async_hook",
+    "async",
+    "namespace"
+  ],
   "author": "David Uhlíř",
   "license": "ISC",
   "devDependencies": {
