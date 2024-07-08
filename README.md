@@ -6,7 +6,7 @@ Example:
 ```ts
 import { Logger } from '@david.uhlir/context-log'
 
-Logger.attach(console)
+Logger.attach()
 
 await Logger.runInNamespace('namespace-1', async () => {
   console.log('My log')

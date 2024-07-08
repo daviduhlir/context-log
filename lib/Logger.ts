@@ -18,6 +18,13 @@ export interface LoggerRef {
   warn(...msgs: any[])
 }
 
+export const SYSTEM_CONSOLE = {
+  log: console.log,
+  error: console.error,
+  info: console.info,
+  warn: console.warn,
+}
+
 export class Logger {
   static readonly console = {
     log: console.log,
@@ -25,7 +32,7 @@ export class Logger {
     info: console.info,
     warn: console.warn,
   }
-  static attach(logger: LoggerRef, config: Partial<LoggerConfig> = {}) {
+  static attach(logger: LoggerRef = SYSTEM_CONSOLE, config: Partial<LoggerConfig> = {}) {
     const finalConfig = {
       ...DEFAULT_CONFIG,
       ...config,
